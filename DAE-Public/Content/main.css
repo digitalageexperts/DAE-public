@@ -1,0 +1,17 @@
+﻿.container
+{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.section-wrapper{
+    
+    text-align:center;
+}
+
+.section-wrapper:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
