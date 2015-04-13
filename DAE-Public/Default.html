@@ -8,48 +8,136 @@
     <link href="Scripts/onepage-scroll.css" rel="stylesheet" type="text/css" />
     <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="Content/main.css" rel="stylesheet" />
-
-      <script type="text/javascript">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript">
         $(function () {
-            $('.main').onepage_scroll();
+            $('.main').onepage_scroll({
+                animationTime: 800
+            });
         });
     </script>
 </head>
 <body>
+    <div class="logo">
+        <img src="images/Logo.png" alt="Digital Age Experts" />
+    </div>
     <div class="main">
-        <section class="section-wrapper">
+        <section class="section-wrapper" id="home">
             <div class="container text-center">
-                hello world.
+                <div class="title">Welcome to Digital Age Experts</div>
+                <h3>The digital age is a scary place, let us guide you through it</h3>
             </div>
         </section>
-        <section>
-            <div class="row">
-                <div class="col-md-4 col-lg-4 col-sm-2">
-                    Angular
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-2">
-                    AWS
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-2">
-                    INFOSEC
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-2">
-                    SharePoint
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-2">
-                    Application Development
-                </div>
-                <div class="col-md-4 col-lg-4 col-sm-2">
-                    PKI Authentication Modules
+        <section class="section-wrapper" id="whatwedo">
+            <div class="container text-center">
+                <h1>What are We Good At</h1>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-6 wwd-module animate-1">
+                        <div class="icon">
+                            <img src="images/icon_angular.jpg" />
+                        </div>
+                        <div class="desc">
+                            <h4>Angular</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 wwd-module animate-1">
+                        <div class="icon">
+
+                            <img src="images/icon_aws.png" />
+                        </div>
+                        <div class="desc">
+                            <h4>AWS</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 wwd-module animate-1">
+                        <div class="icon">
+                            <img src="images/icon_infosec.gif" />
+                        </div>
+                        <div class="desc">
+                            <h4>INFOSEC</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 wwd-module animate-2">
+                        <div class="icon">
+                            <img src="images/icon_sharepoint.png" />
+                        </div>
+                        <div class="desc">
+                            <h4>SharePoint</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 wwd-module animate-2">
+                        <div class="icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="desc">
+                            <h4>Application Development</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 wwd-module animate-2">
+                        <div class="icon">
+                            <span class="fa-stack">
+                                <i class="fa fa-user fa-stack-1x"></i>
+                                <i class="fa fa-lock fa-stack-lg text-danger" style="font-size:0.6em; margin-left:50px; margin-top:80px;"></i>
+                            </span>
+                        </div>
+                        <div class="desc">
+                            <h4>PKI Authentication Modules</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            Why work for us.
+        <section class="section-wrapper" id="whyworkforus">
+            <div class="container text">
+                <h1>Why You Should Join Our Family</h1>
+                <div class="row">
+                    <div class="col-md-6  text-center animate-1">
+                        <h4><img src="images/LeaderVsBoss.jpeg" style="height:300px; " /></h4>
+                        <div class="desc">
+                            <p>Other than enjoying the type of benefits only a small business can provide, our leader is not just some named figurehead that gives commands down the management chain, but is there along side you.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right animate-2">
+                        <h3>All Employees Enjoy The Following Benefits</h3>
+                        <ul style="list-style:none;">
+                            <li>Bucketless leave to use as they wish</li>
+                            <li>Training that is given to the employee if unused</li>
+                            <li>Company trips to conferences around the country</li>
+                            <li>100% of insurance benefits paid for employee and +1</li>
+                            <li>Percentage based profit sharing for contribution in company growth</li>
+                            <li>Long Term Incentive Plan to reward longevity with the company</li>
+                            <li>Flexibility in compensation packages to accomodate the individual employee</li>
+                            <li>401(k) with Safe-Harbor Non-Elective company contributions</li>
+                        </ul>
+                    </div>
+                </div>
         </section>
-        <section>
-            Contact Us
+        <section class="section-wrapper" id="contactus">
+            <div class="container text-center">
+                <h1>Get In Touch</h1>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2 animate-1" onclick="document.location.href = 'mailto:blaibson@digitalageexperts.com'">
+                        <div class="clickable">
+                            <div class="icon">
+                                <img src="images/handShake.png" height="90" />
+                            </div>
+                            <h4>Work With Us</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-1 clickable" onclick="document.location.href = 'mailto:blaibson@digitalageexperts.com'">
+                        <div class="clickable">
+                            <div class="icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h4>Join Our Family</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+    </div>
+    <div class="footer text-center">
+        Digital Age Experts, LLC. · 1542 Scandia Circle, Reston VA, 20190 · <a href="mailto:blaibson@digitalageexperts.com" style="color:#ccc">blaibson@digitalageexperts.com</a>
     </div>
 </body>
 </html>
