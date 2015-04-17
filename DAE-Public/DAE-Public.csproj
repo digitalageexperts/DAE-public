@@ -65,7 +65,10 @@
     <Content Include="Default.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
+    <Content Include="images\lightbulb.jpg" />
     <Content Include="images\foundation.gif" />
+    <Content Include="images\consulting-lightbulb.png" />
+    <Content Include="images\professional.png" />
     <Content Include="images\orange.jpg" />
     <Content Include="images\handShake.png" />
     <Content Include="images\icon_angular.jpg" />
@@ -76,9 +79,12 @@
     <Content Include="images\icon_sharepoint.png" />
     <Content Include="images\LeaderVsBoss.jpeg" />
     <Content Include="images\Logo.png" />
+    <Content Include="images\spiralroom.jpg" />
+    <Content Include="images\clouds.jpg" />
     <Content Include="images\presence-ii.png" />
     <Content Include="images\quorra.png" />
     <Content Include="images\ravens.gif" />
+    <Content Include="images\consulting.png" />
     <Content Include="images\soft-grid.gif" />
     <Content Include="images\tutorial.gif" />
     <Content Include="images\wallpaper4.jpg" />
