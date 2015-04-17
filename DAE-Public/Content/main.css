@@ -111,7 +111,9 @@ body{
 /* Animations */
 section.active .container h1,
 section.active .container .animate-1,
-section.active .container .animate-2
+section.active .container .animate-2,
+section.active .container .animate-4,
+section.active .container .animate-6
 {
     opacity:1;
     transform:translateY(0);
@@ -119,7 +121,9 @@ section.active .container .animate-2
 
 section .container h1,
 section .container .animate-1,
-section .container .animate-2
+section .container .animate-2,
+section .container .animate-4,
+section .container .animate-6
 {
     opacity:0;
     transform:translateY(10%);
@@ -139,6 +143,16 @@ section .container .animate-1
 section .container .animate-2
 {
     transition-delay:.8s;
+}
+
+section .container .animate-4
+{
+    transition-delay:1.4s;
+}
+
+section .container .animate-6
+{
+    transition-delay:2s;
 }
 
 .clickable
