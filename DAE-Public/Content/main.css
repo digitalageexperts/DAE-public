@@ -18,15 +18,48 @@
 body{
     position:relative;
     color:#111;
+    font-size:16px;    
+    background-color:black;
+}
+
+#background
+{
+     background:url("../images/wallpaper4.jpg") center 25%;
+     background-repeat:no-repeat;
+     background-size:cover;
+     position:fixed;
+     height:120%;
+     width:120%;
+     top:00px;
+     left:0;
+    transition:all .8s ease-out;
+}
+
+.leftright
+{
+    -webkit-animation: leftright 30s ease-in-out infinite alternate;
+    position:fixed;
+     height:120%;
+     width:100%;
+     top:00px;
+     left:0;
+}
+
+@-webkit-keyframes leftright
+{
+    0% { transform: translateX(-20%);}
+    100% { transform: translateX(0%);}
 }
 
 .logo{
     position:fixed;
-    top:10px;
-    left:10px;
+    top:0px;
+    left:40%;
+    padding:10px;
     z-index:10000;
     /*background-color:rgba(255,255,255, 0.6);*/
-    width:275px;
+    width:20%;
+    background-color:rgba(255,255,255, 0.9);
 }
 
 .logo img{
@@ -37,35 +70,44 @@ body{
     
 }
 
+.background-wrapper
+{
+    padding:20px;
+    display:inline-block;
+    vertical-align:middle;
+    
+    border:dashed 2px;
+}
 
 #home
 {
     /*background:-webkit-radial-gradient(circle, rgba(0,0,0,.2), rgba(0,0,0,.8)), url("../images/quorra.png");*/
     /*background:linear-gradient(rgba(125,125,125,.4), rgba(125,125,125,.4)), url("../images/quorra.png");*/
-    background:url("../images/wallpaper4.jpg");
     color:#fff;
     
 }
 
-#whatwedo{
-    background:-webkit-radial-gradient(circle, rgba(19, 45, 56, .6), rgba(0,0,0,.8)), url("../images/quorra.png");
+#whatwedo .background-wrapper{
+    background:linear-gradient(rgba(19, 45, 56, 0.9), rgba(19, 45, 56, 0.9)), url("../images/quorra.png");    
+    /*background-color:rgba(19, 45, 56, 1);*/
     /*background-color:#3f8aac;*/
     color:#8ED62B;
 }
 
-#whatweregoodat{
+#wheelhouse .background-wrapper{
     background-color:#ffffff;
+    /*background:linear-gradient(rgba(255,255,255, 0.85), rgba(255,255,255, 0.85)), url("../images/presence-ii.png");*/    
 
 }
 
-#whatwebelievein{
+#whatwebelievein .background-wrapper{
     /*background-color:#eb7400;*/
     /*background:url("../images/orange.jpg");*/
     background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../images/orange.jpg");
     color:#D6FFFF;
 }
 
-#contactus{
+#contactus .background-wrapper{
     background-color:#2f2f2f;
     color:white;
     /*background:url("../images/wallpaper4.jpg");*/
@@ -76,11 +118,29 @@ body{
     margin:0 0 40px 0;
 }
 
+#whatwedo .tooltip-hover
+{
+    text-decoration:underline;
+    cursor:default;
+}
+
+
+#whatwedo .tooltip-inner
+{
+    background-color:white !important;
+    color: black !important;
+}
+
+#whatwedo .tooltip-arrow
+{
+    color:white !important;
+    border-bottom-color:white !important;
+}
 
  .icon
 {
-    height:2em;
-    line-height:2em;
+    height:1.6em;
+    line-height:1.6em;
     font-size:6em;
 }
 
@@ -113,6 +173,11 @@ body{
     line-height:30px;
     background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9),rgba(0,0,0,1));
     font-size:9pt;
+}
+
+.shadow
+{
+    -webkit-box-shadow:4px 4px 4px #000;
 }
 
 /* Animations */
@@ -172,4 +237,50 @@ section .container .animate-6
 {
     /*background: radial-gradient(orange, #2f2f2f, #2f2f2f);*/
     color:orange;
+}
+
+.grayscale-animate img
+{
+    -webkit-filter:grayscale(1) blur(1px) brightness(0.8);
+    filter:grayscale(1);    
+    transition:all .3s linear;
+}
+
+.grayscale-animate:hover img
+{
+    -webkit-filter:grayscale(0) blur(0px) brightness(1);
+    filter:grayscale(0);
+}
+
+.grayscale-animate .desc
+{
+    opacity:0.2;
+}
+
+.grayscale-animate:hover .desc
+{
+    opacity:1;
+    transition:all .3s linear;
+}
+
+.animate-background-1
+{
+    transform:translateY(0);
+}
+
+.animate-background-2
+{
+    transform:translateY(-5%);
+}
+.animate-background-3
+{
+    transform:translateY(-10%);
+}
+.animate-background-4
+{
+    transform:translateY(-15%);
+}
+.animate-background-5
+{
+    transform:translateY(-20%);
 }
