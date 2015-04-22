@@ -65,6 +65,7 @@
     <Content Include="Default.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
+    <Content Include="images\LeaderVsBoss.jpg" />
     <Content Include="images\lightbulb.jpg" />
     <Content Include="images\foundation.gif" />
     <Content Include="images\consulting-lightbulb.png" />
@@ -78,7 +79,6 @@
     <Content Include="images\icon_aws.png" />
     <Content Include="images\icon_infosec.gif" />
     <Content Include="images\icon_sharepoint.png" />
-    <Content Include="images\LeaderVsBoss.jpeg" />
     <Content Include="images\Logo.png" />
     <Content Include="images\puzzle.png" />
     <Content Include="images\spiralroom.jpg" />

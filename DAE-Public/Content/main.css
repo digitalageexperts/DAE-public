@@ -38,11 +38,25 @@ body{
 .leftright
 {
     -webkit-animation: leftright 30s ease-in-out infinite alternate;
+    -o-animation: leftright 30s ease-in-out infinite alternate;
+    -moz-animation: leftright 30s ease-in-out infinite alternate;
     position:fixed;
      height:120%;
      width:100%;
      top:00px;
      left:0;
+}
+
+@-moz-keyframes leftright
+{
+     0% { transform: translateX(-20%);}
+    100% { transform: translateX(0%);}
+}
+
+@-o-keyframes leftright
+{
+     0% { transform: translateX(-20%);}
+    100% { transform: translateX(0%);}
 }
 
 @-webkit-keyframes leftright
@@ -202,6 +216,49 @@ section .container .animate-6
     transition:all .3s ease-out;
 }
 
+section .animate-left
+{
+    opacity:0;
+    transform:translateX(-20%);
+    transition:all .4s ease-out;
+}
+
+section.active .animate-left
+{
+    opacity:1;
+    transform:translateX(0);
+}
+
+section .l1
+{
+    transition-delay:.7s;
+}
+
+section .l2
+{
+    transition-delay:.75s;
+}
+
+section .l3
+{
+    transition-delay:.8s;
+}
+
+section .l4
+{
+    transition-delay:.85s;
+}
+
+section .l5
+{
+    transition-delay:.9s;
+}
+
+section .l6
+{
+    transition-delay:.95s;
+}
+
 section .container h1
 {
     transition-delay:0.6s;
@@ -241,7 +298,7 @@ section .container .animate-6
 
 .grayscale-animate img
 {
-    -webkit-filter:grayscale(1) blur(1px) brightness(0.8);
+    -webkit-filter:grayscale(1) blur(1px) brightness(0.8);    
     filter:grayscale(1);    
     transition:all .3s linear;
 }
